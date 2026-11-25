@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Academic Resource Recommendation Engine</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Academic Resource Recommendation Engine</div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="interests.html">Interests</a>
+      <a href="tags.html">Tags</a>
+      <a href="recommendations.html">Recommendations</a>
+      <a href="ratings.html">Ratings</a>
+      <a href="bookmarks.html">Bookmarks</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="admin.html">Admin</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Find the right study material faster</h1>
+      <p>Tell us your course and the topics you like. We suggest books, videos, notes and articles that fit.</p>
+      <a class="button" href="recommendations.html">Get my recommendations</a>
+    </section>
+
+    <section class="stats">
+      <div class="stat-box"><span id="total-resources">0</span> resources</div>
+      <div class="stat-box"><span id="total-topics">0</span> topics</div>
+      <div class="stat-box"><span id="total-bookmarks">0</span> bookmarks</div>
+    </section>
+
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li>Browse the <a href="catalogue.html">catalogue</a> or explore by <a href="tags.html">tags</a>.</li>
+      <li>Choose your <a href="interests.html">interests</a>.</li>
+      <li>Open <a href="recommendations.html">recommendations</a> to see the best matches.</li>
+      <li>Rate resources, bookmark them and send us feedback.</li>
+    </ol>
+
+    <h2>Top rated right now</h2>
+    <div id="top-resources" class="card-grid"></div>
+  </main>
+
+  <footer>
+    <p>Academic Resource Recommendation Engine | Group project, section K3P26CP</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

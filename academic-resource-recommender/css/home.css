@@ -1,0 +1,74 @@
+/* home.css - only used on index.html */
+
+.hero {
+  background: var(--main-dark);
+  color: white;
+  border-radius: 14px;
+  padding: 44px 36px;
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 2.4rem;
+  max-width: 600px;
+}
+
+.hero p {
+  color: #d5dafa;
+  font-size: 1.1rem;
+  max-width: 560px;
+  margin: 10px 0 22px;
+}
+
+.hero .button {
+  background: var(--accent);
+  color: var(--main-dark);
+  padding: 12px 24px;
+}
+
+.hero .button:hover {
+  background: #ffb94a;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.stat-box {
+  flex: 1;
+  min-width: 150px;
+  background: white;
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--accent);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  color: #555b70;
+  padding: 14px 20px;
+}
+
+.stat-box span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--main);
+  line-height: 1.2;
+}
+
+.steps {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 18px 20px 18px 42px;
+}
+
+.steps li {
+  margin-bottom: 8px;
+}
+
+.steps li:last-child {
+  margin-bottom: 0;
+}

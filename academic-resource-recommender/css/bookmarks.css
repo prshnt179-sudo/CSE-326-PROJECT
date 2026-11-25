@@ -1,0 +1,9 @@
+/* bookmarks.css - only used on bookmarks.html */
+
+#bookmark-summary {
+  background: var(--light);
+  border-radius: 4px;
+  padding: 8px 14px;
+  margin-bottom: 16px;
+  display: inline-block;
+}

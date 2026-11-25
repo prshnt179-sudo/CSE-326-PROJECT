@@ -1,0 +1,16 @@
+/* feedback.css - only used on feedback.html */
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.feedback-item {
+  background: white;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 4px;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  max-width: 600px;
+}

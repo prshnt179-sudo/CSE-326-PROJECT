@@ -1,0 +1,72 @@
+/* admin.css - only used on admin.html */
+
+.hidden {
+  display: none;
+}
+
+.admin-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.admin-top p {
+  background: var(--light);
+  border-radius: 4px;
+  padding: 6px 14px;
+}
+
+textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background: var(--light);
+  color: var(--main);
+}
+
+.delete-btn {
+  background: #b3261e;
+  padding: 4px 10px;
+  font-size: 0.85rem;
+}
+
+.delete-btn:hover {
+  background: #8c1d18;
+}
+
+#reset-button,
+#logout-button {
+  background: #777;
+}
+
+#reset-button {
+  margin-top: 12px;
+}
+
+table {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+tbody tr:nth-child(even) {
+  background: #f8f9fe;
+}

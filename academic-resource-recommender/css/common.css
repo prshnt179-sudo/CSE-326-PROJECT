@@ -1,0 +1,275 @@
+/* common.css - styles used on every page */
+
+:root {
+  --main: #2f3e9e;
+  --main-dark: #1f2a6b;
+  --accent: #f5a524;
+  --light: #eceffc;
+  --text: #1f2430;
+  --border: #dde1f0;
+  --shadow: 0 2px 8px rgba(31, 42, 107, 0.08);
+  --shadow-hover: 0 8px 20px rgba(31, 42, 107, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, Arial, sans-serif;
+  background: #f5f6fb;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--main);
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ---------- header and navigation ---------- */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 24px;
+  background: var(--main-dark);
+  padding: 12px 24px;
+  border-bottom: 4px solid var(--accent);
+}
+
+.logo {
+  color: white;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+nav a {
+  color: #c9d0f5;
+  text-decoration: none;
+  font-size: 0.92rem;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+}
+
+nav a.active {
+  background: var(--accent);
+  color: var(--main-dark);
+  font-weight: 600;
+}
+
+/* ---------- page layout ---------- */
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+h1 {
+  color: var(--main-dark);
+  font-size: 2rem;
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+
+h2 {
+  color: var(--main-dark);
+  font-size: 1.35rem;
+  margin: 32px 0 12px;
+}
+
+.intro {
+  color: #555b70;
+  font-size: 1.05rem;
+  margin-bottom: 24px;
+  max-width: 650px;
+}
+
+footer {
+  background: var(--main-dark);
+  color: #c9d0f5;
+  text-align: center;
+  font-size: 0.88rem;
+  padding: 22px;
+  margin-top: 48px;
+}
+
+/* ---------- resource cards ---------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--main);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 18px;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+.card h3 {
+  color: var(--main-dark);
+  font-size: 1.08rem;
+  line-height: 1.35;
+  margin-bottom: 4px;
+}
+
+.card p {
+  font-size: 0.93rem;
+  margin: 8px 0;
+}
+
+.meta {
+  color: #6a7088;
+  font-size: 0.85rem;
+}
+
+.rating-text {
+  color: #b86e00;
+  font-weight: 700;
+}
+
+.tag {
+  display: inline-block;
+  background: var(--light);
+  color: var(--main);
+  border-radius: 14px;
+  padding: 2px 11px;
+  font-size: 0.8rem;
+  margin: 2px 4px 2px 0;
+}
+
+/* ---------- buttons ---------- */
+button,
+.button {
+  display: inline-block;
+  background: var(--main);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover,
+.button:hover {
+  background: var(--main-dark);
+}
+
+.bookmark-btn {
+  background: white;
+  color: var(--main);
+  border: 1px solid var(--main);
+  padding: 5px 12px;
+  font-size: 0.85rem;
+  margin-top: 8px;
+}
+
+.bookmark-btn:hover {
+  background: var(--light);
+}
+
+.bookmark-btn.saved {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--main-dark);
+}
+
+/* ---------- forms ---------- */
+.form-box {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 24px;
+  max-width: 620px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin: 14px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #c3c9e0;
+  border-radius: 6px;
+  background: white;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--main);
+  box-shadow: 0 0 0 3px rgba(47, 62, 158, 0.18);
+}
+
+.form-box button {
+  margin-top: 18px;
+}
+
+.message {
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.message.error {
+  color: #b3261e;
+}
+
+.message.success {
+  color: #1e7e34;
+}
+
+.empty-text {
+  background: white;
+  border: 2px dashed var(--border);
+  border-radius: 10px;
+  color: #555b70;
+  padding: 24px;
+  text-align: center;
+}

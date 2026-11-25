@@ -1,0 +1,34 @@
+/* tags.css - only used on tags.html */
+
+.tag-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.tag-button {
+  background: white;
+  color: var(--main);
+  border: 1px solid var(--main);
+  border-radius: 16px;
+  padding: 4px 12px;
+  font-size: 0.88rem;
+}
+
+.tag-button:hover {
+  background: var(--light);
+}
+
+.tag-button.active-tag {
+  background: var(--main);
+  color: white;
+}
+
+.tag-button {
+  background: white;
+}
+
+.tag-button:hover {
+  border-color: var(--accent);
+}

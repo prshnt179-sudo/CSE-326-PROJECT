@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interests | Academic Resource Recommendation Engine</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/interests.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Academic Resource Recommendation Engine</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="interests.html" class="active">Interests</a>
+      <a href="tags.html">Tags</a>
+      <a href="recommendations.html">Recommendations</a>
+      <a href="ratings.html">Ratings</a>
+      <a href="bookmarks.html">Bookmarks</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="admin.html">Admin</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Your Interests</h1>
+    <p class="intro">Tick the topics you want to learn about. We use them to recommend resources.</p>
+
+    <div id="topic-list"></div>
+
+    <div class="button-row">
+      <button id="save-interests">Save interests</button>
+      <button id="clear-interests">Clear all</button>
+    </div>
+    <p id="message" class="message"></p>
+
+    <h2>Saved interests</h2>
+    <div id="saved-interests"></div>
+  </main>
+
+  <footer>
+    <p>Academic Resource Recommendation Engine | Group project, section K3P26CP</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/interests.js"></script>
+</body>
+</html>

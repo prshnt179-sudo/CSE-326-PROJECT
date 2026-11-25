@@ -1,0 +1,45 @@
+/* ratings.css - only used on ratings.html */
+
+.star-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.star-option {
+  margin: 0;
+  font-weight: normal;
+  background: var(--light);
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background: var(--light);
+  color: var(--main);
+}
+
+table {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+tbody tr:nth-child(even) {
+  background: #f8f9fe;
+}

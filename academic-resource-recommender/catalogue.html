@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogue | Academic Resource Recommendation Engine</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/catalogue.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Academic Resource Recommendation Engine</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="catalogue.html" class="active">Catalogue</a>
+      <a href="interests.html">Interests</a>
+      <a href="tags.html">Tags</a>
+      <a href="recommendations.html">Recommendations</a>
+      <a href="ratings.html">Ratings</a>
+      <a href="bookmarks.html">Bookmarks</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="admin.html">Admin</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Resource Catalogue</h1>
+    <p class="intro">Search every resource or filter by type and course.</p>
+
+    <section class="filters">
+      <div>
+        <label for="search-box">Search</label>
+        <input type="text" id="search-box" placeholder="Try python, sql or networking">
+      </div>
+      <div>
+        <label for="type-filter">Type</label>
+        <select id="type-filter">
+          <option value="">All types</option>
+          <option value="Book">Book</option>
+          <option value="Video">Video</option>
+          <option value="Article">Article</option>
+          <option value="Notes">Notes</option>
+        </select>
+      </div>
+      <div>
+        <label for="course-filter">Course</label>
+        <select id="course-filter">
+          <option value="">All courses</option>
+        </select>
+      </div>
+    </section>
+
+    <p id="result-count"></p>
+    <div id="resource-list" class="card-grid"></div>
+  </main>
+
+  <footer>
+    <p>Academic Resource Recommendation Engine | Group project, section K3P26CP</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/catalogue.js"></script>
+</body>
+</html>

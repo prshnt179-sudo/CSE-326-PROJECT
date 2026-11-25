@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin | Academic Resource Recommendation Engine</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Academic Resource Recommendation Engine</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="interests.html">Interests</a>
+      <a href="tags.html">Tags</a>
+      <a href="recommendations.html">Recommendations</a>
+      <a href="ratings.html">Ratings</a>
+      <a href="bookmarks.html">Bookmarks</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="admin.html" class="active">Admin</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Admin Management</h1>
+
+    <!-- shown before the admin logs in -->
+    <section id="login-box">
+      <p class="intro">Enter the admin password to manage resources. (Demo password: admin123)</p>
+      <form id="login-form" class="form-box">
+        <label for="password">Password</label>
+        <input type="password" id="password">
+        <button type="submit">Log in</button>
+        <p id="login-message" class="message"></p>
+      </form>
+    </section>
+
+    <!-- shown after login -->
+    <section id="admin-panel" class="hidden">
+      <div class="admin-top">
+        <p>Feedback received: <strong id="feedback-count">0</strong></p>
+        <button id="logout-button">Log out</button>
+      </div>
+
+      <h2>Add a new resource</h2>
+      <form id="add-form" class="form-box">
+        <label for="title">Title</label>
+        <input type="text" id="title">
+
+        <label for="type">Type</label>
+        <select id="type">
+          <option value="Book">Book</option>
+          <option value="Video">Video</option>
+          <option value="Article">Article</option>
+          <option value="Notes">Notes</option>
+        </select>
+
+        <label for="course">Course</label>
+        <input type="text" id="course" placeholder="e.g. Data Structures">
+
+        <label for="topics">Topics (separate with commas)</label>
+        <input type="text" id="topics" placeholder="e.g. python, maths">
+
+        <label for="description">Description</label>
+        <textarea id="description"></textarea>
+
+        <label for="link">Link (optional)</label>
+        <input type="url" id="link" placeholder="https://">
+
+        <button type="submit">Add resource</button>
+        <p id="add-message" class="message"></p>
+      </form>
+
+      <h2>Manage resources</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Type</th>
+            <th>Course</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="admin-table-body"></tbody>
+      </table>
+      <button id="reset-button">Reset to sample resources</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Academic Resource Recommendation Engine | Group project, section K3P26CP</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

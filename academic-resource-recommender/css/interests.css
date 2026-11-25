@@ -1,0 +1,35 @@
+/* interests.css - only used on interests.html */
+
+#topic-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0;
+}
+
+.topic-option {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 6px 14px;
+  margin: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.topic-option input {
+  margin-right: 6px;
+}
+
+.button-row button {
+  margin-right: 8px;
+}
+
+#clear-interests {
+  background: #777;
+}
+
+.topic-option:hover {
+  border-color: var(--main);
+  background: var(--light);
+}
